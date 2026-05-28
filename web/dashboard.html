@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>holoscope-lite</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+
+<header>
+  <span class="live-dot" aria-hidden="true"></span>
+  <span class="header-title">holoscope-lite</span>
+  <span class="header-stats">
+    <span class="hstat"><span class="hstat-label">reqs</span> <span class="hstat-val" id="stat-reqs">—</span></span>
+    <span class="hstat"><span class="hstat-label">errors</span> <span class="hstat-val err" id="stat-errors">—</span><span class="hstat-sub" id="stat-error-pct"></span></span>
+    <span class="hstat"><span class="hstat-label">avg</span> <span class="hstat-val" id="stat-avg">—</span></span>
+  </span>
+  <span id="last-updated">connecting...</span>
+</header>
+
+<main>
+
+  <div class="left-panel">
+    <div class="panel-header">endpoint latency</div>
+    <div id="latency-ranking"></div>
+  </div>
+
+  <div class="right-panel">
+    <div class="panel-header">traces <span class="panel-hint">— click row to inspect</span></div>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>trace id</th>
+            <th>method</th>
+            <th>path</th>
+            <th>status</th>
+            <th>latency</th>
+            <th>time</th>
+          </tr>
+        </thead>
+        <tbody id="traces-body">
+          <tr><td colspan="6" class="empty-state">connecting...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</main>
+
+<dialog id="trace-modal">
+  <div class="modal-header">
+    <h2>trace <span id="modal-trace-id"></span></h2>
+    <button class="modal-close" id="modal-close-btn" aria-label="Close">&times;</button>
+  </div>
+  <div class="modal-body">
+    <pre id="modal-body-pre"></pre>
+  </div>
+</dialog>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
