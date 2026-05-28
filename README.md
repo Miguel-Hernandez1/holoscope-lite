@@ -10,7 +10,7 @@ Built with:
 - Custom request tracing middleware
 
 Screenshot:
-<img width="900" alt="image" src="https://github.com/user-attachments/assets/ae839fe1-eccf-4569-88ca-ecb0b9060c45" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/ae839fe1-eccf-4569-88ca-ecb0b9060c45" />
 
 Key Features:
 - Request tracing with unique trace IDs
