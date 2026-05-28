@@ -9,8 +9,7 @@ Built with:
 - Concurrent in-memory data structures
 - Custom request tracing middleware
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/39c643d0-c35e-4998-94c2-e737b34fff50" />
-
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/39c643d0-c35e-4998-94c2-e737b34fff50" /> <img width="300" alt="image" src="https://github.com/user-attachments/assets/8e617bba-0979-4806-8b80-987c59ae505d" />
 
 Key Features:
 - Request tracing with unique trace IDs
