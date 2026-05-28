@@ -1,5 +1,25 @@
 # Holoscope Lite
 
+A lightweight observability platform for Go services that captures request traces, tracks endpoint latency, and visualizes live system behavior through a real-time dashboard.
+
+Built with:
+- Go
+- Docker
+- HTML/CSS/JavaScript
+- Concurrent in-memory data structures
+- Custom request tracing middleware
+
+Screenshot:
+[dashboard screenshot here]
+
+Key Features:
+- Request tracing with unique trace IDs
+- Live latency monitoring
+- Error-rate tracking
+- Real-time dashboard
+- Docker deployment
+- Zero external dependencies
+
 A request tracing and latency observability tool for Go HTTP services. Runs entirely locally in a single Docker container — no Datadog account, no Prometheus server, no cloud setup required.
 
 ```
@@ -282,21 +302,6 @@ Tests cover: trace storage and retrieval, ring buffer cap enforcement, per-endpo
 | Threshold alerting | `GET /observability/alerts` when error rate or latency exceeds a threshold |
 | Time-range filtering | Query traces by start/end timestamp |
 | Log line correlation | Attach structured log lines to a trace by trace ID |
-
----
-
-## Resume bullets
-
-Adapt these based on what you want to emphasize:
-
-**Systems / Backend focus**
-> Built a Go HTTP observability system from scratch: custom middleware captures per-request traces (method, path, status, latency), a mutex-protected ring buffer stores the last 1,000 events, and per-endpoint statistics are aggregated in a single consistent lock pass to avoid snapshot skew.
-
-**Infrastructure / DevOps focus**
-> Designed and containerized a self-contained observability pipeline in Go — request tracing middleware, in-memory metric store, REST API, and live dashboard — deployable with a single `docker compose up` command and no external dependencies.
-
-**Full-stack focus**
-> Implemented an end-to-end request observability tool: Go middleware pipeline on the backend, a JSON API serving trace and metric data, and a terminal-style browser dashboard (Gruvbox dark theme, CSS bar charts, 5-second polling) built without frontend frameworks.
 
 ---
 
