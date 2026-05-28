@@ -150,7 +150,7 @@ holoscope-lite/
 ### Docker Compose — recommended
 
 ```bash
-git clone https://github.com/mighdz/holoscope-lite
+git clone https://github.com/Miguel-Hernandez1/holoscope-lite
 cd holoscope-lite
 docker compose up --build
 ```
@@ -160,7 +160,7 @@ Open **http://localhost:8080/dashboard**
 ### Local Go
 
 ```bash
-git clone https://github.com/mighdz/holoscope-lite
+git clone https://github.com/Miguel-Hernandez1/holoscope-lite
 cd holoscope-lite
 go run cmd/server/main.go
 ```
