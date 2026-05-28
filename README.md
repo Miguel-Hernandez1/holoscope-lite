@@ -1,4 +1,4 @@
-<img width="1511" height="826" alt="Screenshot 2026-05-28 at 5 27 42 PM" src="https://github.com/user-attachments/assets/60d1e743-d1fc-4648-8eec-af9ce39045e8" /># Holoscope Lite
+# Holoscope Lite
 
 A lightweight observability platform for Go services that captures request traces, tracks endpoint latency, and visualizes live system behavior through a real-time dashboard.
 
