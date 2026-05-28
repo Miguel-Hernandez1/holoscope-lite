@@ -9,7 +9,8 @@ Built with:
 - Concurrent in-memory data structures
 - Custom request tracing middleware
 
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/ae839fe1-eccf-4569-88ca-ecb0b9060c45" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/39c643d0-c35e-4998-94c2-e737b34fff50" />
+
 
 Key Features:
 - Request tracing with unique trace IDs
@@ -282,12 +283,7 @@ Tests cover: trace storage and retrieval, ring buffer cap enforcement, per-endpo
 
 > Run `./scripts/generate_traffic.sh` for 15 seconds, then capture the dashboard.
 
-<!-- Add screenshots here -->
-<!-- Suggested shots:
-     1. Dashboard after 30 seconds of traffic — latency ranking visible, trace table populated
-     2. Trace detail modal open on a slow request
-     3. High error rate state — after hitting /simulate/error repeatedly
--->
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/8e617bba-0979-4806-8b80-987c59ae505d" />
 
 ---
 
