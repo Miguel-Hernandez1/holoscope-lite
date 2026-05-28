@@ -9,7 +9,6 @@ Built with:
 - Concurrent in-memory data structures
 - Custom request tracing middleware
 
-Screenshot:
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/ae839fe1-eccf-4569-88ca-ecb0b9060c45" />
 
 Key Features:
